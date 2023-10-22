@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     board_div.forEach((sq) =>{
         sq.classList.add("square");
         sq.addEventListener("click",function(){
-           
+            //checkes to see if square is already filled and if the game is active
             if(moves[squares.indexOf(sq)] == " " && gameOn == true ){
               if(cur_play == "X"){
                sq.classList.add('square', 'X');
